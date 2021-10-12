@@ -1,11 +1,11 @@
 package com.address.book;
 
 public class Contacts {
-
+	//variables
 	String firstName, lastName, address, city, state, zip,phoneNumber, email;
-
-	public Contacts(String firstName, String lastName, String address, String city, String state, String zip,
-			String phoneNumber, String email) {
+	
+	//constructor 
+	public Contacts() {
 		super();
 		this.firstName = firstName;
 		this.lastName = lastName;
