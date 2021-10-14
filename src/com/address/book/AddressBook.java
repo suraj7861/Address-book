@@ -5,15 +5,16 @@ public class AddressBook {
 	public static void main(String[] args) {
 		// print message
 		System.out.println("Welcome to Address Book Program");
+		//create object 
 		PersonInfo person = new PersonInfo();
-		
-		System.out.println("Address Book Menu!!");
-        System.out.println("1.Add contact");//choices for operation
-        System.out.print("enter choice:");
+	    System.out.println("Address Book Menu!");
+        System.out.println("Enter '1'to add person detail");//choices for operation
         Scanner sc = new Scanner(System.in);
         int choice = sc.nextInt();
+        
         switch (choice){
             case 1:
+            	//add contact
             	person.addContacts();
                 System.out.println("Contact Added Successfully!");
                 break;
