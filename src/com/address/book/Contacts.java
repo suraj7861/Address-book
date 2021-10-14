@@ -3,9 +3,10 @@ package com.address.book;
 public class Contacts {
 	//variables
 	String firstName, lastName, address, city, state, zip,phoneNumber, email;
-	
-	//constructor 
-	public Contacts() {
+
+	//constructor
+	public Contacts(String firstName, String lastName, String address, String city, String state, String zip,
+			String phoneNumber, String email) {
 		super();
 		this.firstName = firstName;
 		this.lastName = lastName;
@@ -22,8 +23,5 @@ public class Contacts {
 		return "Contacts [firstName=" + firstName + ", lastName=" + lastName + ", address=" + address + ", city=" + city
 				+ ", state=" + state + ", zip=" + zip + ", phoneNumber=" + phoneNumber + ", email=" + email + "]";
 	}
-	
-	
-	
 	
 }
