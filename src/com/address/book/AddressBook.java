@@ -24,7 +24,5 @@ public class AddressBook {
                 System.out.println("Please Enter Valid Choice:");
                 break;
         }
-	
 	}
-
 }
