@@ -45,4 +45,71 @@ public class PersonInfo {
             System.out.println(personInfo.get(i));
         }
     }
+	
+	public void editContacts() {
+		System.out.println("Enter the person name you want to edit person detail:");
+		String enterName = sc.next();
+		//flag to check enter name 
+		boolean flag = false;
+		//for each loop: 
+		for (Contacts person : personInfo) {
+			//check entered name is equal or not 
+			if(person.firstName.equals(enterName) ) {
+				flag = true;
+				System.out.println("1. First Name\n" + "2.Last Name\n" + "3.Address\n" + "4.city\n" + "5.State\n" + "6.zip\n" + "7.phoneNumber\n" + "8.email");
+				int choice = sc.nextInt();
+				switch(choice) {
+				case 1:
+					System.out.println("Enter first name : "); // First name
+					String editFirstName = sc.next();
+					person.firstName = editFirstName;
+					break;
+				case 2:
+					System.out.println("Enter last name : "); //Last name
+					String editLastName = sc.next();
+					person.lastName = editLastName;
+					break;
+				case 3:
+					System.out.println("Enter address : "); //Address
+					String editAddress = sc.next();
+					person.address = editAddress;
+					break;
+				case 4:
+					System.out.println("Enter city : "); //City 
+					String editCity = sc.next(); 
+					person.city = editCity;
+					break;
+				case 5:
+					System.out.println("Enter state : "); // State
+					String editState = sc.next();
+					person.state = editState;
+					break;
+				case 6:
+					System.out.println("Enter zip : "); // Zip
+					String editZip = sc.next();
+					person.zip = editZip;
+					break;
+				case 7:
+					System.out.println("Enter phone number : "); //Phone number
+					String editPhoneNumber = sc.next();
+					person.phoneNumber = editPhoneNumber;
+					break;
+				case 8:
+					System.out.println("Enter email : "); // Email
+					String editEmail = sc.next();
+					person.email = editEmail;
+					break;
+				default:
+					System.out.println("Enter valid number ");
+				
+				}
+				break;
+			}					
+		}
+		//flag false for name not found
+		if(flag = false) {
+			System.out.println("etered name not found ");
+		}	
+		
+	}
 }
