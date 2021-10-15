@@ -108,7 +108,7 @@ public class PersonInfo {
 			}					
 		}
 		//flag false for name not found
-		if(flag = false) {
+		if(flag == false) {
 			System.out.println("etered name not found ");
 		}	
 		
