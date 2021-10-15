@@ -107,10 +107,28 @@ public class PersonInfo {
 				break;
 			}					
 		}
-		//flag false for name not found
-		if(flag = false) {
+		//person name not found
+		if(flag == false) {
 			System.out.println("etered name not found ");
 		}	
+	}
+	
+	//method: Delete person detail
+	public void deleteContact() {
+		System.out.println("Enter a name you want to delete:");
+		String enterName = sc.next();
+		boolean flag = false;
+		for (Contacts person : personInfo) {
+			if(person.firstName.equals(enterName)){
+				flag =true;
+				personInfo.remove(person);	//remove person contact
+				break;
+			}
+		}
+		//person name not found
+		if(flag == false) {
+			System.out.println("etered name not found ");
+		}
 		
 	}
 }

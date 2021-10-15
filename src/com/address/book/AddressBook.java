@@ -7,7 +7,7 @@ public class AddressBook {
 		System.out.println("Welcome to Address Book Program");
 		//create object
 		PersonInfo personDetail = new PersonInfo();
-		System.out.println("Enter 1.add person detail  2.Edit contact"); //choices for operation
+		System.out.println("Enter 1.add person detail  2.Edit contact  3.Delete contact"); //choices for operation
 		Scanner sc = new Scanner(System.in);	
 		int choice = sc.nextInt();
 		//switch case for choice
@@ -20,6 +20,10 @@ public class AddressBook {
 		case 2:
 			personDetail.editContacts();
 			System.out.println("Contact Edited Successfully!");
+			break;
+		case 3:
+			personDetail.deleteContact();
+			System.out.println("Contact delete Successfully!");
 			break;
 		default:
 			System.out.println("Please Enter Valid Choice:");
