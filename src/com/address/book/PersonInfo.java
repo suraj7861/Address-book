@@ -7,7 +7,7 @@ public class PersonInfo {
 	//ArrayList to store person detail 
 	ArrayList<Contacts> personInfo;
 	Scanner sc = new Scanner(System.in);
-    
+	
 	//constructor
     PersonInfo(){
     	personInfo = new ArrayList<Contacts>();
