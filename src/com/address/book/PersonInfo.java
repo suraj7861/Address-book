@@ -13,7 +13,7 @@ public class PersonInfo {
     	personInfo = new ArrayList<Contacts>();
     }
     
-    //method: to add contact
+  //method: to add contact
     public void addContacts() {
         String firstName,lastName, address, city, zip, phoneNumber, email;
         System.out.println("Enter First Name: ");
