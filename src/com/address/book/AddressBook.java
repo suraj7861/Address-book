@@ -8,7 +8,7 @@ public class AddressBook {
 		//create object
 		PersonInfo personDetail = new PersonInfo();
 		boolean flag = true;
-		
+		//while loop: add,edit and delete contact
 		while(flag) {
 			System.out.println("Enter 1.add person detail  2.Edit contact  3.Delete contact 4.Exit"); //choices for operation
 			Scanner sc = new Scanner(System.in);	
@@ -22,11 +22,13 @@ public class AddressBook {
 				personDetail.toPrint();
 				break;
 			case 2:
+				//edit contact
 				personDetail.editContacts();
 				System.out.println("Contact Edited Successfully!");
 				personDetail.toPrint();
 				break;
 			case 3:
+				//delete contact
 				personDetail.deleteContact();
 				System.out.println("Contact delete Successfully!");
 				break;

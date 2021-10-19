@@ -3,12 +3,14 @@ package com.address.book;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import com.address.book.Contacts;
+
 public class PersonInfo {
 	//ArrayList to store person detail
 	ArrayList<Contacts> personInfo;
 	Scanner sc = new Scanner(System.in);
 	String firstName,lastName, address, city, zip, phoneNumber, email;
-
+	
 	//constructor
     PersonInfo(){
     	personInfo = new ArrayList<Contacts>();
@@ -39,7 +41,7 @@ public class PersonInfo {
         email = sc.next();
         
     }
-	
+    
     public void toPrint() {
         //contact class object
         Contacts contact= new Contacts(firstName,lastName, address, city, zip, phoneNumber, email, email);
@@ -51,6 +53,7 @@ public class PersonInfo {
         }
         System.out.println("-----------------------------------");
     }
+    
 	public void editContacts() {
 		System.out.println("Enter the person name you want to edit person detail:");
 		String enterName = sc.next();
@@ -116,23 +119,23 @@ public class PersonInfo {
 			System.out.println("etered name not found ");
 		}	
 	}
-		
-		//method: Delete person detail
-		public void deleteContact() {
-			System.out.println("Enter a name you want to delete:");
-			String enterName = sc.next();
-			boolean flag = false;
-			for (Contacts person : personInfo) {
-				if(person.firstName.equals(enterName)){
-					flag =true;
-					personInfo.remove(person);	//remove person contact
-					break;
-				}
+	
+	//method: Delete person detail
+	public void deleteContact() {
+		System.out.println("Enter a name you want to delete:");
+		String enterName = sc.next();
+		boolean flag = false;
+		for (Contacts person : personInfo) {
+			if(person.firstName.equals(enterName)){
+				flag =true;
+				personInfo.remove(person);	//remove person contact
+				break;
 			}
-			//person name not found
-			if(flag == false) {
-				System.out.println("etered name not found ");
-			}
+		}
+		//person name not found
+		if(flag == false) {
+			System.out.println("etered name not found ");
+		}
 			
-		}	
+	}	
 }
