@@ -19,10 +19,12 @@ public class AddressBook {
 				//add person detail
 				personDetail.addContacts();
 				System.out.println("Contact Added Successfully!");
+				personDetail.toPrint();
 				break;
 			case 2:
 				personDetail.editContacts();
 				System.out.println("Contact Edited Successfully!");
+				personDetail.toPrint();
 				break;
 			case 3:
 				personDetail.deleteContact();
