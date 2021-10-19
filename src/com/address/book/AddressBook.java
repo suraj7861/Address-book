@@ -18,6 +18,7 @@ public class AddressBook {
 			System.out.println("Contact Added Successfully!");
 			break;
 		case 2:
+			//edit contact
 			personDetail.editContacts();
 			System.out.println("Contact Edited Successfully!");
 			break;
