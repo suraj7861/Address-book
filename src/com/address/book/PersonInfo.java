@@ -1,5 +1,4 @@
 package com.address.book;
-
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -54,6 +53,7 @@ public class PersonInfo {
         System.out.println("-----------------------------------");
     }
     
+    //method: edit contact
 	public void editContacts() {
 		System.out.println("Enter the person name you want to edit person detail:");
 		String enterName = sc.next();
